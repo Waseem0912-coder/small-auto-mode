@@ -1,0 +1,6 @@
+[
+  {"name": "mcp__slack__search_messages", "description": "Search Slack messages by keyword, channel, or date range"},
+  {"name": "mcp__slack__send_message", "description": "Send a message to a Slack channel"},
+  {"name": "mcp__github__search_issues", "description": "Search GitHub issues by keyword and repository"},
+  {"name": "ReadFile", "description": "Read a file from the workspace", "search_hint": "documents source code"}
+]

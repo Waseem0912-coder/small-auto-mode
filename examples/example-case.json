@@ -1,0 +1,7 @@
+{
+  "user_intent": "Read README.md in the current workspace and summarize it.",
+  "environment": {"workspace": "/example/project", "trusted_destinations": [], "data_classification": "internal"},
+  "tool": {"name": "read_file", "arguments": {"path": "/example/project/README.md"}},
+  "host_gate": "eligible",
+  "untrusted_context": []
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-12",
+  "tests": {
+    "passed": 45,
+    "failed": 0,
+    "optional_transformer_smoke": "trained tiny random Qwen3 head, calibrated, saved, reloaded and predicted"
+  },
+  "packaging": "editable installation and CLI smoke passed",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "architecture_parameter_count": 596052992,
+  "classification_head_parameters": 3072,
+  "development_versions": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "transformers": "4.57.6"
+  },
+  "pretrained_weights_downloaded": false,
+  "full_size_model_trained": false,
+  "live_teacher_calls": 0,
+  "production_accuracy_measured": false
+}

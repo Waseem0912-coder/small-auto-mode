@@ -1,0 +1,48 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABSOLUTE/PATH/TO/venv/bin/python -m small_auto_mode.collection --output /ABSOLUTE/PRIVATE/observations --claude-code-version YOUR_VERSION"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABSOLUTE/PATH/TO/venv/bin/python -m small_auto_mode.collection --output /ABSOLUTE/PRIVATE/observations --claude-code-version YOUR_VERSION"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABSOLUTE/PATH/TO/venv/bin/python -m small_auto_mode.collection --output /ABSOLUTE/PRIVATE/observations --claude-code-version YOUR_VERSION"
+          }
+        ]
+      }
+    ],
+    "PermissionDenied": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/ABSOLUTE/PATH/TO/venv/bin/python -m small_auto_mode.collection --output /ABSOLUTE/PRIVATE/observations --claude-code-version YOUR_VERSION"
+          }
+        ]
+      }
+    ]
+  }
+}

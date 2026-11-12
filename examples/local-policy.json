@@ -1,0 +1,12 @@
+{
+  "known_tools": [
+    "read_file"
+  ],
+  "deny_tools": [
+    "delete_account"
+  ],
+  "ask_tools": [
+    "write_file"
+  ],
+  "auto_allow": false
+}

@@ -1,0 +1,32 @@
+{
+  "id": "replace-with-unique-id",
+  "session_id": "one-real-session-id",
+  "scenario_family": "shared-template-family-id",
+  "user_intent": "Read the project README and summarize it. Do not publish it.",
+  "tool": {
+    "name": "read_file",
+    "arguments": {
+      "path": "/example/project/README.md"
+    }
+  },
+  "environment": {
+    "workspace": "/example/project",
+    "data_classification": "internal"
+  },
+  "history": [],
+  "untrusted_context": [],
+  "label": {
+    "decision": "allow",
+    "source": "human",
+    "verified": false
+  },
+  "provenance": {
+    "training_rights": "owned",
+    "rights_basis": "Describe the actual rights for this example",
+    "reviewer": "",
+    "context_reviewed": false,
+    "cli_version": "record-if-applicable",
+    "policy_version": "your-policy-version",
+    "evidence": []
+  }
+}
