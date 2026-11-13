@@ -4,6 +4,8 @@ Independent tool-call authorization, local tool discovery, and a training pipeli
 
 **Status: research prototype. No trained safety checkpoint or production accuracy claim.** Candidate tool calls are never executed by this package. Automatic approval is off by default. The project is independent of Claude Code, LangChain, Jev, and any application host.
 
+**Continuing in Claude Code or another coding agent:** start with [the handoff](docs/HANDOFF.md). The root [CLAUDE.md](CLAUDE.md) points to the saved state, verification commands and next implementation task. Original research artifacts are preserved in an optional [private companion](docs/handoff/ground-source.md); the public repository keeps accurate provenance and reproducible source references.
+
 ## Why this exists
 
 An agent needs to distinguish an authorized action from a similar-looking action that exceeds the user's request. A command-only blacklist and a prompt-injection detector cannot make that decision reliably. The input needs the authenticated user request, durable constraints, exact tool arguments, trusted environment facts, and relevant history.
@@ -19,6 +21,7 @@ We inspected Claude Code 2.1.323 with REA and reviewed existing open-source auto
 - Dataset preparation: reviewed provenance, separate train/calibration/test sets, connected grouping across sessions, scenarios and duplicate inputs.
 - Tool search: small independent deterministic implementation of observed name/hint/description ranking.
 - Advisor: documented integration pattern and API declaration; no private server prompt or weights.
+- Context and memory map: detailed source-backed documentation, a host-owned context packet builder with a projection audit, and reproducible evidence checks.
 
 ## Quick start: offline
 
@@ -31,6 +34,7 @@ pip install -e .
 small-auto-mode gate --case examples/example-case.json --policy examples/example-policy.json
 small-auto-mode jev-build --case examples/example-case.json --policy examples/example-policy.json
 small-auto-mode search --catalog examples/catalog.json --query '+slack search'
+small-auto-mode context-build --input examples/context-input.json
 python -m unittest discover -s tests -v
 ```
 
@@ -58,7 +62,15 @@ See [collection](docs/collection.md) before installing the example hook configur
 
 **A tool running is not an auto-classifier allow label. A denied action may be a no-verdict failure.** Observations are stored with `label: null` and `training_eligible: false`. Add reviewed intent, context, a decision and rights provenance to construct training records.
 
+## Understand context before policy
+
+The [context and memory map](docs/context/README.md) traces the main conversation, persistent memory, compaction, provenance-aware classifier projection, policy assembly, and the separate ToolSearch/advisor paths. It includes pinned source offsets and a verifier for locally supplied artifacts.
+
+`context-build` previews our independent normalized context format. It preserves the exact candidate, separates policy from session facts, and explains retained and dropped events. A ready packet is still **unassessed**. This is a tested reference for a trusted host adapter, not a live Claude transcript extractor or an installed replacement for its context manager.
+
 ## Train the small model
+
+For the next local backend experiment, see the [open decision-model comparison](docs/local-model-options.md): pinned vLLM Vela 0.3B and Kai 0.6B candidates, component licenses, documented memory costs and a benchmark plan. No candidate has yet been integrated or measured here.
 
 See [training](docs/training.md) for the full data contract and commands:
 

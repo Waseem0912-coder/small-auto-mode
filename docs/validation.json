@@ -1,9 +1,12 @@
 {
   "date": "2026-11-12",
   "tests": {
-    "passed": 45,
+    "passed": 74,
     "failed": 0,
-    "optional_transformer_smoke": "trained tiny random Qwen3 head, calibrated, saved, reloaded and predicted"
+    "optional_transformer_smoke": "trained tiny random Qwen3 head, calibrated, saved, reloaded and predicted",
+    "context_boundary_tests": 23,
+    "evidence_verifier_tests": 6,
+    "skipped": 0
   },
   "packaging": "editable installation and CLI smoke passed",
   "base_model": "Qwen/Qwen3-0.6B",
@@ -18,5 +21,32 @@
   "pretrained_weights_downloaded": false,
   "full_size_model_trained": false,
   "live_teacher_calls": 0,
-  "production_accuracy_measured": false
+  "production_accuracy_measured": false,
+  "timezone": "America/Los_Angeles",
+  "context_evidence": {
+    "modules_verified": 12,
+    "anchors_verified": 110,
+    "binary_hash_and_size_verified": true,
+    "verified_against_original_and_repeated_extractions": true,
+    "scope": "Artifact identity and locations; not native parity"
+  },
+  "private_research_preservation": {
+    "metadata": "handoff/private-bundle.json",
+    "original_files": 3711,
+    "extracted_modules": 3237,
+    "archive_file_hashes_verified": true,
+    "published_to_public_repository": false
+  },
+  "open_model_research": {
+    "candidate_weights_downloaded": false,
+    "candidate_inference_runs": 0,
+    "candidate_benchmarks_run": 0,
+    "comparison": "local-model-options.md"
+  },
+  "previous_checkpoint": {
+    "commit": "d7ad8e7e36e95a60e2a63c3dc0b91562d308a057",
+    "tests_passed": 45,
+    "github_actions_run": 43333579542,
+    "github_actions_conclusion": "success"
+  }
 }

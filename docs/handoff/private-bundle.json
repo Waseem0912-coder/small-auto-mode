@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-11-12",
+  "timezone": "America/Los_Angeles",
+  "filename": "ground-source-2.1.323.tar.gz",
+  "relative_local_path": "inspection-artifacts/ground-source-2.1.323.tar.gz",
+  "bytes": 24374142,
+  "sha256": "8f679f81d2c546a421a1b3216101d7bb128602f2020a6626f77425fedf8446e0",
+  "original_files": 3711,
+  "extracted_modules": 3237,
+  "uncompressed_original_bytes": 75814704,
+  "all_original_file_hashes_verified": true,
+  "original_binary_included": false,
+  "publicly_published": false,
+  "retention": "Private local companion; download/copy it before the workspace expires. Public Git stores this metadata and reproduction instructions only."
+}

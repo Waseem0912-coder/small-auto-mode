@@ -34,3 +34,5 @@ The client declares a hosted `advisor_20260301` tool with the `advisor-tool-2026
 - [Advisor API](https://platform.claude.com/docs/en/agents-and-tools/tool-use/advisor-tool)
 
 Static inspection supports architecture and request-contract findings. It does not establish behavior under every live account configuration, model equivalence, latency or safety accuracy.
+
+The expanded [context and memory map](context/README.md) documents transcript projection, persistent memory, compaction, request assembly, ToolSearch/advisor boundaries, and exact evidence locations. An independent packet builder makes the supported context transformations executable and auditable.

@@ -1,0 +1,794 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "name": "@anthropic-ai/claude-code-linux-x64",
+    "version": "2.1.323",
+    "size": 362435088,
+    "sha256": "604d29a6869409106b6a1110bdadcc8b72e8654a5a865d23258f938a696e348e"
+  },
+  "rea": {
+    "package": "rea-agents",
+    "version": "6.9.0",
+    "commit": "a8527d43b8439476f5c9d1497315dfe7dd5e1f38"
+  },
+  "inspection": {
+    "method": "REA unchanged Bun decoder with original bounded contents-only writer",
+    "modules_extracted": 3237,
+    "contents_bytes": 63760938,
+    "bytecode_and_source_maps_included": false,
+    "target_inference_calls": 0,
+    "offset_units": "zero-based original module bytes",
+    "function_anchor_convention": "function keyword, excluding preceding async; variable and method anchors explicitly recorded",
+    "scope": "Artifact identity and local source locations; not runtime branch coverage or model equivalence"
+  },
+  "modules": [
+    {
+      "path": "chunk-187gn6d6.js",
+      "length": 621035,
+      "absolute_byte_offset": 307336933,
+      "sha256": "70146fe2eb430048fae14be2e1336c51bc2239c086bec6d13a66dec4958558eb",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "Enn",
+          "byte_offset": 64874,
+          "anchor": "function Enn(",
+          "purpose": "Advisor feature selection"
+        },
+        {
+          "name": "dx",
+          "byte_offset": 64998,
+          "anchor": "function dx(",
+          "purpose": "Advisor runtime availability"
+        },
+        {
+          "name": "IVe",
+          "byte_offset": 66454,
+          "anchor": "function IVe(",
+          "purpose": "Advisor compatibility selection"
+        },
+        {
+          "name": "description_cache_invalidation",
+          "byte_offset": 413655,
+          "anchor": "maybeInvalidate(e){",
+          "purpose": "Deferred-name-set description cache invalidation"
+        },
+        {
+          "name": "MS",
+          "byte_offset": 413822,
+          "anchor": "function MS(",
+          "purpose": "Tool search query tokenization"
+        },
+        {
+          "name": "$Es",
+          "byte_offset": 414303,
+          "anchor": "function $Es(",
+          "purpose": "Tool ranking helper"
+        },
+        {
+          "name": "qNt",
+          "byte_offset": 414790,
+          "anchor": "function qNt(",
+          "purpose": "Local ToolSearch ranker"
+        }
+      ]
+    },
+    {
+      "path": "chunk-2rhdc6tt.js",
+      "length": 285328,
+      "absolute_byte_offset": 304882460,
+      "sha256": "c7858de6c19330c7963a3cefabc794e707da497b9923bd2a7ede1efdac9c410b",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "HDr",
+          "byte_offset": 134017,
+          "anchor": "function HDr(",
+          "purpose": "Memory-index truncation"
+        }
+      ]
+    },
+    {
+      "path": "chunk-579w43z0.js",
+      "length": 5677096,
+      "absolute_byte_offset": 308952040,
+      "sha256": "e53aae6a0bb057778d9f0b0e35100f7017a0249ccfe90851e42208088cc39e44",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "jao",
+          "byte_offset": 131814,
+          "anchor": "function jao(",
+          "purpose": "Prefix truncation and Read-rest note"
+        },
+        {
+          "name": "csn",
+          "byte_offset": 1113605,
+          "anchor": "function csn(",
+          "purpose": "Attached-machine dynamic guidance"
+        },
+        {
+          "name": "lmn",
+          "byte_offset": 1520662,
+          "anchor": "function lmn(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "oQe",
+          "byte_offset": 1550789,
+          "anchor": "function oQe(",
+          "purpose": "Model-dependent lazy instruction budget"
+        },
+        {
+          "name": "zot",
+          "byte_offset": 1552055,
+          "anchor": "function zot(",
+          "purpose": "Instruction content preprocessing"
+        },
+        {
+          "name": "Kot",
+          "byte_offset": 1554253,
+          "anchor": "function Kot(",
+          "purpose": "Bounded file/storage read"
+        },
+        {
+          "name": "uRr",
+          "byte_offset": 1554873,
+          "anchor": "function uRr(",
+          "purpose": "Instruction import parsing"
+        },
+        {
+          "name": "e6",
+          "byte_offset": 1556942,
+          "anchor": "function e6(",
+          "purpose": "Recursive imports and path/type filtering"
+        },
+        {
+          "name": "aRe",
+          "byte_offset": 1558026,
+          "anchor": "function aRe(",
+          "purpose": "Rules discovery and scoped selection"
+        },
+        {
+          "name": "_E",
+          "byte_offset": 1562549,
+          "anchor": "function _E(",
+          "purpose": "Memoized instruction load"
+        },
+        {
+          "name": "vRr",
+          "byte_offset": 1563770,
+          "anchor": "function vRr(",
+          "purpose": "Eager source ordering and AutoMem branch"
+        },
+        {
+          "name": "PLn",
+          "byte_offset": 1569040,
+          "anchor": "function PLn(",
+          "purpose": "Load invalidation and hook refresh reason"
+        },
+        {
+          "name": "uPe",
+          "byte_offset": 1570131,
+          "anchor": "function uPe(",
+          "purpose": "Snapshot filtering"
+        },
+        {
+          "name": "cPe",
+          "byte_offset": 1570580,
+          "anchor": "function cPe(",
+          "purpose": "Snapshot filtering"
+        },
+        {
+          "name": "dhn",
+          "byte_offset": 1570772,
+          "anchor": "function dhn(",
+          "purpose": "User and managed scoped-rule loading"
+        },
+        {
+          "name": "Nmo",
+          "byte_offset": 1571004,
+          "anchor": "function Nmo(",
+          "purpose": "Project scoped-rule loading"
+        },
+        {
+          "name": "lPe",
+          "byte_offset": 1571889,
+          "anchor": "function lPe(",
+          "purpose": "Scoped rule matching"
+        },
+        {
+          "name": "zM",
+          "byte_offset": 1580192,
+          "anchor": "function zM(",
+          "purpose": "Context build and newest snapshot publication"
+        },
+        {
+          "name": "rAr",
+          "byte_offset": 1582555,
+          "anchor": "function rAr(",
+          "purpose": "Context build and newest snapshot publication"
+        },
+        {
+          "name": "tA",
+          "byte_offset": 1585037,
+          "anchor": "function tA(",
+          "purpose": "User-context refresh"
+        },
+        {
+          "name": "Iwn",
+          "byte_offset": 1863976,
+          "anchor": "var Iwn=",
+          "purpose": "Advisor tool type declaration"
+        },
+        {
+          "name": "Mbn",
+          "byte_offset": 1892569,
+          "anchor": "function Mbn(",
+          "purpose": "Advisor model configuration"
+        },
+        {
+          "name": "SX",
+          "byte_offset": 1940199,
+          "anchor": "function SX(",
+          "purpose": "Memory selector reset"
+        },
+        {
+          "name": "wTn",
+          "byte_offset": 1956559,
+          "anchor": "function wTn(",
+          "purpose": "Optional ToolSearch schema budget"
+        },
+        {
+          "name": "s0r",
+          "byte_offset": 1957340,
+          "anchor": "function s0r(",
+          "purpose": "Tool schema byte-based token estimate"
+        },
+        {
+          "name": "jco",
+          "byte_offset": 1959927,
+          "anchor": "jco=fn({registryToolId:",
+          "purpose": "Local ToolSearch host wrapper"
+        },
+        {
+          "name": "Yut",
+          "byte_offset": 2413806,
+          "anchor": "Yut=",
+          "purpose": "Constraint-preservation request and provenance guidance"
+        },
+        {
+          "name": "_de",
+          "byte_offset": 2425291,
+          "anchor": "function _de(",
+          "purpose": "Constraint-preservation request and provenance guidance"
+        },
+        {
+          "name": "mLn",
+          "byte_offset": 2442339,
+          "anchor": "function mLn(",
+          "purpose": "Reactive compaction path"
+        },
+        {
+          "name": "Rz",
+          "byte_offset": 2767443,
+          "anchor": "function Rz(",
+          "purpose": "Recovery transformations"
+        },
+        {
+          "name": "d3r",
+          "byte_offset": 2768963,
+          "anchor": "function d3r(",
+          "purpose": "Recovery transformations"
+        },
+        {
+          "name": "xde",
+          "byte_offset": 2770019,
+          "anchor": "function xde(",
+          "purpose": "Recovery transformations"
+        },
+        {
+          "name": "MNn",
+          "byte_offset": 2771208,
+          "anchor": "function MNn(",
+          "purpose": "Overflow reminder and preserved UUID metadata"
+        },
+        {
+          "name": "cct",
+          "byte_offset": 2772059,
+          "anchor": "function cct(",
+          "purpose": "Overflow reminder and preserved UUID metadata"
+        },
+        {
+          "name": "tmo",
+          "byte_offset": 2773436,
+          "anchor": "function tmo(",
+          "purpose": "Full compaction and hosted summarizer request"
+        },
+        {
+          "name": "DNn",
+          "byte_offset": 2786396,
+          "anchor": "function DNn(",
+          "purpose": "Full compaction and hosted summarizer request"
+        },
+        {
+          "name": "cLe",
+          "byte_offset": 2795601,
+          "anchor": "function cLe(",
+          "purpose": "Restoration coordinator and compact hooks"
+        },
+        {
+          "name": "c3r",
+          "byte_offset": 2797728,
+          "anchor": "function c3r(",
+          "purpose": "File / plan / skill restoration"
+        },
+        {
+          "name": "f3r",
+          "byte_offset": 2798316,
+          "anchor": "function f3r(",
+          "purpose": "File / plan / skill restoration"
+        },
+        {
+          "name": "p3r",
+          "byte_offset": 2798481,
+          "anchor": "function p3r(",
+          "purpose": "File / plan / skill restoration"
+        },
+        {
+          "name": "m3r",
+          "byte_offset": 2800872,
+          "anchor": "function m3r(",
+          "purpose": "Background task reminders"
+        },
+        {
+          "name": "g3r",
+          "byte_offset": 2801535,
+          "anchor": "function g3r(",
+          "purpose": "Background task reminders"
+        },
+        {
+          "name": "A3r",
+          "byte_offset": 2816098,
+          "anchor": "function A3r(",
+          "purpose": "Classifier overflow freshness/recovery"
+        },
+        {
+          "name": "KNn",
+          "byte_offset": 2816536,
+          "anchor": "function KNn(",
+          "purpose": "Classifier overflow freshness/recovery"
+        },
+        {
+          "name": "FHe",
+          "byte_offset": 2841783,
+          "anchor": "function FHe(",
+          "purpose": "Post-compaction invalidation"
+        },
+        {
+          "name": "p$n",
+          "byte_offset": 2866901,
+          "anchor": "function p$n(",
+          "purpose": "Auxiliary context construction and hard ceiling"
+        },
+        {
+          "name": "BXr",
+          "byte_offset": 2867634,
+          "anchor": "function BXr(",
+          "purpose": "Ordered variable-field shedding"
+        },
+        {
+          "name": "jLe",
+          "byte_offset": 2885025,
+          "anchor": "function jLe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "hNe",
+          "byte_offset": 2885171,
+          "anchor": "function hNe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Ste",
+          "byte_offset": 3025701,
+          "anchor": "function Ste(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "advisor_request_declaration",
+          "byte_offset": 3068416,
+          "anchor": "type:Iwn,name:uae,model:nf",
+          "purpose": "Advisor main-request declaration"
+        },
+        {
+          "name": "safeguards_request_field",
+          "byte_offset": 3096929,
+          "anchor": "safeguards:[{type:eIs",
+          "purpose": "Main request carries the auxiliary context"
+        },
+        {
+          "name": "Hgt",
+          "byte_offset": 3221815,
+          "anchor": "function Hgt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "DGn",
+          "byte_offset": 3224886,
+          "anchor": "function DGn(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Kgt",
+          "byte_offset": 3272824,
+          "anchor": "function Kgt(",
+          "purpose": "Structured principal-source extraction"
+        },
+        {
+          "name": "myt",
+          "byte_offset": 3274914,
+          "anchor": "function myt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "tZr",
+          "byte_offset": 3282177,
+          "anchor": "function tZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "GFe",
+          "byte_offset": 3282401,
+          "anchor": "function GFe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Gz",
+          "byte_offset": 3282626,
+          "anchor": "function Gz(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Vgt",
+          "byte_offset": 3282892,
+          "anchor": "function Vgt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "byt",
+          "byte_offset": 3283783,
+          "anchor": "function byt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "QFe",
+          "byte_offset": 3297014,
+          "anchor": "function QFe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "ozn",
+          "byte_offset": 3297123,
+          "anchor": "function ozn(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "zFe",
+          "byte_offset": 3297424,
+          "anchor": "function zFe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "uZr",
+          "byte_offset": 3297546,
+          "anchor": "function uZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "fZr",
+          "byte_offset": 3297799,
+          "anchor": "function fZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "rzn",
+          "byte_offset": 3298091,
+          "anchor": "function rzn(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Nms",
+          "byte_offset": 3298994,
+          "anchor": "function Nms(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Ryt",
+          "byte_offset": 3299033,
+          "anchor": "function Ryt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "hZr",
+          "byte_offset": 3300639,
+          "anchor": "function hZr(",
+          "purpose": "Dynamic project and owner context"
+        },
+        {
+          "name": "yZr",
+          "byte_offset": 3305390,
+          "anchor": "function yZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "_Zr",
+          "byte_offset": 3305988,
+          "anchor": "function _Zr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "kZr",
+          "byte_offset": 3306596,
+          "anchor": "function kZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "SZr",
+          "byte_offset": 3306822,
+          "anchor": "function SZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "wZr",
+          "byte_offset": 3307109,
+          "anchor": "function wZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "bZr",
+          "byte_offset": 3308459,
+          "anchor": "function bZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "BZr",
+          "byte_offset": 3315680,
+          "anchor": "function BZr(",
+          "purpose": "Stage requests and common message construction"
+        },
+        {
+          "name": "zZr",
+          "byte_offset": 3327235,
+          "anchor": "function zZr(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "bHe",
+          "byte_offset": 3328253,
+          "anchor": "function bHe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "stale_server_context_call",
+          "byte_offset": 3380737,
+          "anchor": "staleServerClassifierContext?.(",
+          "purpose": "Optional pre-execution context freshness hook"
+        },
+        {
+          "name": "H5n",
+          "byte_offset": 3783872,
+          "anchor": "function H5n(",
+          "purpose": "Lazy instruction announcement and truncation"
+        }
+      ]
+    },
+    {
+      "path": "chunk-7vdjs0h2.js",
+      "length": 5997,
+      "absolute_byte_offset": 308444705,
+      "sha256": "c2bdb7802c6627c47837ec3629f55c680a642857de55de060a35dbf349b1593d",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "tQi",
+          "byte_offset": 1851,
+          "anchor": "function tQi(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        }
+      ]
+    },
+    {
+      "path": "chunk-bpzcj4vc.js",
+      "length": 47434,
+      "absolute_byte_offset": 308038988,
+      "sha256": "5ca07a4e5debbc76a70bb2716d7f96a77a2eebe5c064a2bf59ea456b5bf819d0",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "vr",
+          "byte_offset": 29281,
+          "anchor": "function vr(",
+          "purpose": "Result shape validation"
+        },
+        {
+          "name": "ZXi",
+          "byte_offset": 31938,
+          "anchor": "function ZXi(",
+          "purpose": "Record the facts sent with the request"
+        },
+        {
+          "name": "Ar",
+          "byte_offset": 33953,
+          "anchor": "function Ar(",
+          "purpose": "Unsupported thread handling"
+        },
+        {
+          "name": "fJi",
+          "byte_offset": 37997,
+          "anchor": "function fJi(",
+          "purpose": "Role-dependent fallback eligibility"
+        },
+        {
+          "name": "XPr",
+          "byte_offset": 40051,
+          "anchor": "function XPr(",
+          "purpose": "Input/sibling rewrite invalidation"
+        },
+        {
+          "name": "JPr",
+          "byte_offset": 43219,
+          "anchor": "function JPr(",
+          "purpose": "Server result to classifier-result adapter"
+        }
+      ]
+    },
+    {
+      "path": "chunk-f2w9btq2.js",
+      "length": 1057,
+      "absolute_byte_offset": 308175116,
+      "sha256": "ff95468d1d70e1ee6081466965bf8645d320c91fa5957f31f25c5cbbeef1fa45",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "PKe",
+          "byte_offset": 425,
+          "anchor": "function PKe(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "jan",
+          "byte_offset": 548,
+          "anchor": "function jan(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "Fbt",
+          "byte_offset": 772,
+          "anchor": "function Fbt(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "fW",
+          "byte_offset": 831,
+          "anchor": "function fW(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "sCo",
+          "byte_offset": 931,
+          "anchor": "function sCo(",
+          "purpose": "Forwarded-user text sanitation"
+        }
+      ]
+    },
+    {
+      "path": "chunk-grya7fsk.js",
+      "length": 1717,
+      "absolute_byte_offset": 302778510,
+      "sha256": "54f79034be865afd34c50edc249aaa07f13984c507e265b24190544a7b8e24c8",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "g6e",
+          "byte_offset": 442,
+          "anchor": "function g6e(",
+          "purpose": "Auto-memory line and UTF-16 size measure"
+        }
+      ]
+    },
+    {
+      "path": "chunk-mq1jfabw.js",
+      "length": 34823,
+      "absolute_byte_offset": 304511732,
+      "sha256": "38e837976487a2fb33ff2a475572f1e05937b9a8bf6d4e80a3a64d152d96c1cf",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "EMs",
+          "byte_offset": 3982,
+          "anchor": "function EMs(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        },
+        {
+          "name": "lin",
+          "byte_offset": 6681,
+          "anchor": "function lin(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        }
+      ]
+    },
+    {
+      "path": "chunk-qxb2gr8e.js",
+      "length": 1054082,
+      "absolute_byte_offset": 301722241,
+      "sha256": "1f87e6e0733a39b66b6db34688e2f20654852427c706d1c47e8783093d71e2bc",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "iY",
+          "byte_offset": 673155,
+          "anchor": "function iY(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        }
+      ]
+    },
+    {
+      "path": "chunk-s67bjq59.js",
+      "length": 150934,
+      "absolute_byte_offset": 298412504,
+      "sha256": "afba21ef4fddeb8e36ea564709664cad1b7720f81c47fe730fc775f83e31ce85",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "TJn",
+          "byte_offset": 124605,
+          "anchor": "function TJn(",
+          "purpose": "Classifier snapshot storage/access"
+        },
+        {
+          "name": "joi",
+          "byte_offset": 124716,
+          "anchor": "function joi(",
+          "purpose": "Transcript projection or classifier request assembly; see projection.md and request-assembly.md"
+        }
+      ]
+    },
+    {
+      "path": "chunk-zcx62ycy.js",
+      "length": 308438,
+      "absolute_byte_offset": 302813986,
+      "sha256": "af8d7c6411e382924c8429729c124ab3cb4844a7be98d46a85f8e537a6bad8b7",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "Trt",
+          "byte_offset": 88595,
+          "anchor": "function Trt(",
+          "purpose": "Instruction record formatting"
+        }
+      ]
+    },
+    {
+      "path": "chunk-zwf7jwqn.js",
+      "length": 37114,
+      "absolute_byte_offset": 308137372,
+      "sha256": "e46b2203106b7a367c17eab04beff7f69ea51bf045eedac09fa8bd5430b39829",
+      "encoding": "latin1",
+      "symbols": [
+        {
+          "name": "V_o",
+          "byte_offset": 10561,
+          "anchor": "function V_o(",
+          "purpose": "Principal-source eligibility"
+        },
+        {
+          "name": "Lqi",
+          "byte_offset": 11823,
+          "anchor": "function Lqi(",
+          "purpose": "Reply association validation"
+        }
+      ]
+    }
+  ]
+}

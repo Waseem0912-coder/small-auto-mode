@@ -4,6 +4,8 @@ The package returns decisions; your dispatcher executes tools. Put the gate imme
 
 ## Local classifier
 
+Before choosing model input, read the [context reference contract](context/reference.md). `context.build_packet` offers an independent, auditable projection of host-authenticated events. It does not authenticate JSON by itself and is not automatically converted to this module's existing `case` schema. Version and evaluate any such adapter before using it for training or decisions; a packet marked ready is not an approval.
+
 Instantiate `LocalClassifier` once and reuse it; loading 596M parameters per call is inappropriate for a low-latency service. Pass it to `gate.assess(case, policy, predictor)`. `predictor` returns exactly `{allow, ask, deny}` probabilities summing to one. Failures and malformed distributions return `ask`.
 
 The host supplies user intent, durable constraints, exact tool identity/arguments, environment, optional provenance-aware history, and untrusted context. It also determines `host_gate` (`eligible`, `ask`, `deny`) before model scoring. Eligibility means the host has checked the effect/capabilities sufficiently to consider automatic approval, not that the model has declared itself safe. Unknown tools ask. Deterministic denies and mandatory approval take precedence over model results and are checked before invoking the predictor.

@@ -1,7 +1,7 @@
 """Small offline-first command interface."""
 import argparse
 import json
-from . import gate, jev, search
+from . import context, gate, jev, search
 
 
 def main():
@@ -17,8 +17,15 @@ def main():
     sub.add_argument("--catalog", required=True)
     sub.add_argument("--query", required=True)
     sub.add_argument("--limit", type=int, default=5)
+    sub = s.add_parser("context-build", help="Preview an independent context packet and provenance audit")
+    sub.add_argument("--input", required=True)
     args = p.parse_args()
-    if args.command == "search":
+    if args.command == "context-build":
+        try:
+            result = context.build_packet(jev.load_json(args.input))
+        except (ValueError, OSError, TypeError, KeyError, RecursionError):
+            result = {"ready": False, "decision": "ask", "errors": ["invalid_input"], "audit": []}
+    elif args.command == "search":
         tools = [search.Tool.from_dict(x) for x in jev.load_json(args.catalog)]
         result = search.search(tools, args.query, args.limit).as_dict()
     else:
