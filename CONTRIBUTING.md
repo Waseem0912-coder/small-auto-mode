@@ -4,6 +4,6 @@ Use Python 3.11+, install with `pip install -e .`, then run `python -m unittest 
 
 Changes to authorization need a meaningful regression case demonstrating the previous failure. Keep host permission logic outside learned scoring. Never infer a native classifier label from a successful tool result. Keep context, labels and provenance separate, and preserve group isolation in dataset splits.
 
-Do not commit private session data, tokens, proprietary CLI extracts, full vendor prompts, model checkpoints or third-party datasets without clear redistribution rights. Tests should use small original fixtures. Document model revisions, source licenses, calibration choices and limitations.
+The original research archive under `research/` is preserved in this private checkpoint at the repository owner's request. Keep it unchanged and separate from the independent runtime; external contents retain their own terms. Do not publish this checkpoint publicly or commit credentials, private session data, model checkpoints or unreviewed datasets. Tests should use small original fixtures. Document model revisions, source licenses, calibration choices and limitations.
 
 Accuracy claims require a reproducible reviewed corpus, provenance, an untouched test split, coverage and unsafe-approval metrics. Test-suite pass counts are software checks, not classifier accuracy.

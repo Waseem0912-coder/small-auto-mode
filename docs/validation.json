@@ -35,7 +35,9 @@
     "original_files": 3711,
     "extracted_modules": 3237,
     "archive_file_hashes_verified": true,
-    "published_to_public_repository": false
+    "published_to_public_repository": false,
+    "versioned_archive": "research/ground-source-2.1.323.tar.gz",
+    "repository_visibility_verified": "private"
   },
   "open_model_research": {
     "candidate_weights_downloaded": false,

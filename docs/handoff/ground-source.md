@@ -6,7 +6,12 @@ origin, reformatted, redacted, or replaced with summaries**. Provenance remains
 Claude Code 2.1.323 inspected using REA 6.9.0 plus an original contents-only
 extraction adapter.
 
-## What is in the private companion
+The archive is checked into this **private repository** at
+[`research/ground-source-2.1.323.tar.gz`](../../research/ground-source-2.1.323.tar.gz).
+A normal Git clone includes it, so no download from the previous chat is needed.
+Keep this checkpoint private and do not redistribute the archive.
+
+## What is in the preserved archive
 
 `ground-source-2.1.323.tar.gz` contains **3,711 original files** totaling
 75,814,704 uncompressed bytes, plus a README and checksum manifests:
@@ -32,34 +37,41 @@ Archive size: **24,374,142 bytes**. SHA-256:
 ```
 
 The machine-readable archive record is [private-bundle.json](private-bundle.json).
-The original 362 MB executable and downloaded package archives remain in the
-research workspace but are not duplicated in this smaller companion. Its
-manifest records the binary digest; [reproduction](../context/reproduction.md)
+The original 362 MB executable and downloaded package archives are not duplicated
+in this smaller archive. Its manifest records the binary digest;
+[reproduction](../context/reproduction.md)
 identifies the exact package for obtaining it again.
 
-## Public repository versus local bundle
+## Repository and extraction boundaries
 
-The public Git repository contains original analysis, code, tests, evidence
-locations and hashes. **It does not contain the private archive, full vendor
-source, policy dump, credentials, private transcripts or model weights.** The
-archive is stored under the ignored `inspection-artifacts/` directory in the
-working checkout and was not uploaded to public GitHub.
+The repository contains original analysis, code, tests, evidence locations and
+hashes, plus the unchanged research archive under `research/`. This checkpoint
+must remain private because the archive retains vendor source/assets, the
+original exported policy and captured reference material under their existing
+terms. Private storage does not relicense them under this project's Apache-2.0
+license.
 
-Download or copy the companion while this workspace is available, and keep it
-with your own project backups. A temporary workspace is not permanent archival
-storage. A fresh Git clone alone contains the handoff and findings; access to the
-original extracted bytes additionally requires this companion or a reproduced
-extraction. Continuing the independent open-model implementation does not depend
-on having those bytes.
+The archive excludes credentials, live CLI configuration, live user transcripts,
+model weights, and the training environment. Original executable and package
+archives are also omitted. `inspection-artifacts/` remains Git-ignored and is
+where the checked-in archive is unpacked for reading; the unpacked files do not
+need to be committed again.
+
+The original source is available from a fresh clone even if the earlier research
+workspace or chat attachment is unavailable. Continue independent implementation
+using the maintained code and documents; unpack the source when a claim needs to
+be checked against its original bytes.
 
 ## Restore beside a fresh clone
 
-Put the downloaded archive into `inspection-artifacts/` under the repository
-root. Verify its digest against the value above before extracting:
+From the repository root, verify the checked-in archive's digest against the value
+above. If `inspection-artifacts/ground-source-2.1.323/` already exists, verify its
+checksums and reuse it rather than overwriting it. Otherwise extract:
 
 ```sh
-sha256sum inspection-artifacts/ground-source-2.1.323.tar.gz
-tar -xzf inspection-artifacts/ground-source-2.1.323.tar.gz -C inspection-artifacts
+sha256sum research/ground-source-2.1.323.tar.gz
+mkdir -p inspection-artifacts
+tar -xzf research/ground-source-2.1.323.tar.gz -C inspection-artifacts
 cd inspection-artifacts/ground-source-2.1.323
 sha256sum -c SHA256SUMS
 cd ../..
@@ -68,7 +80,7 @@ python scripts/verify_context_evidence.py \
 ```
 
 On macOS, `shasum -a 256` can replace `sha256sum`, including the `-c` check.
-Extract only the bundle whose hash matches the recorded digest. The archive has
+Extract only the archive whose hash matches the recorded digest. The archive has
 a single `ground-source-2.1.323/` root and contains regular files under that root.
 
 Treat `original/` and historical `research/` snapshots as immutable evidence.

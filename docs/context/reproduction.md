@@ -13,6 +13,24 @@ REA version: `rea-agents@6.9.0`, source
 The map is pinned to these artifacts. Later releases may reuse a symbol name for
 something different; a hash mismatch invalidates the pinned offsets.
 
+## Use the preserved original files
+
+A clone of this private repository includes
+[`research/ground-source-2.1.323.tar.gz`](../../research/ground-source-2.1.323.tar.gz).
+The archive preserves all 3,237 extracted contents files unchanged, together with
+the original export and saved research. Follow
+[the restore and checksum instructions](../handoff/ground-source.md), then verify:
+
+```sh
+python scripts/verify_context_evidence.py \
+  --extracted inspection-artifacts/ground-source-2.1.323/original/extracted
+```
+
+This route needs no original executable, network download or target execution.
+The executable and package archives are not included. The extraction procedure
+below remains available for independently reproducing the bytes from pinned
+official packages. Keep this repository checkpoint private.
+
 ## Extraction method
 
 The binary contains a Bun standalone module graph. REA's standard expansion
@@ -60,8 +78,9 @@ REA CLI dependency set or running package lifecycle scripts.
 The verified extraction yielded **3,237 source/assets and 63,760,938 contents
 bytes**. A second extraction reproduced every module hash. Extraction produces a
 local manifest beside the output directory; that manifest records each absolute
-binary offset, length, encoding and SHA-256. Extracted vendor artifacts are not
-part of this repository and `inspection-artifacts/` is ignored by Git.
+binary offset, length, encoding and SHA-256. The unchanged extracted originals
+are preserved in the checked-in private archive. The unpacked working directory
+`inspection-artifacts/` remains ignored by Git.
 
 ## Check the published anchors
 
@@ -100,10 +119,8 @@ formatted copy for reading; do not use its offsets to verify the original.
 | Reference implementation tests | Our declared input/output and failure behavior | Native implementation equivalence or classifier accuracy |
 
 The Markdown maps are original analysis and the scripts are original adapters.
-Only identifiers, hashes and short location anchors are published from the
-inspected artifact; no complete proprietary implementation, policy prompt,
-transcript or checkpoint is included.
-
-The optional [private research companion](../handoff/ground-source.md) preserves
-the original extracted files and saved research snapshots unchanged. It offers
-another way to verify the map without downloading or extracting the binary again.
+The source map consists of identifiers, hashes and short location anchors; the
+separate checked-in [private research archive](../handoff/ground-source.md)
+preserves the original extracted files, policy export and saved research snapshots
+unchanged. The project license does not relicense that material. Keep the archive
+and this repository checkpoint private.

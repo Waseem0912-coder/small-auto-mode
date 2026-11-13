@@ -12,7 +12,7 @@ The fast and escalated checks in this client use the selected hosted model. They
 
 Classifier helpers block on API/parsing failures. The outer runtime has specific prompt, compaction, handoff and agent-spawn handling; claiming every runtime failure always blocks every action would overstate the evidence. Current server-integrated safeguards are another path whose implementation is not recovered from the client.
 
-`claude auto-mode defaults` is a documented policy export. The inspected version yielded 16 allow, 72 soft-deny, 1 hard-deny and 21 environment entries. These are prose policies, not model weights. No full proprietary policy or extracted implementation is included in this public repository.
+`claude auto-mode defaults` is a documented policy export. The inspected version yielded 16 allow, 72 soft-deny, 1 hard-deny and 21 environment entries. These are prose policies, not model weights. The original export and extracted files are preserved unchanged in the separately identified [private research archive](../research/README.md); the maintained runtime is an independent implementation.
 
 ## ToolSearch
 

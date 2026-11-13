@@ -18,9 +18,14 @@ Keep these distinctions accurate:
 - No native classifier weights, representative teacher dataset, trained 596M
   checkpoint or production accuracy result has been obtained.
 - A tool's successful execution is not an authenticated classifier allow label.
-- The original inspected bytes live in the optional private research bundle or
-  can be reproduced from pinned packages. They are not part of this public Git
-  tree. Never edit those originals; format a separate copy if needed.
+- The original inspected bytes are preserved in the checked-in private archive
+  `research/ground-source-2.1.323.tar.gz`. Restore it when source verification is
+  needed, following [ground-source.md](docs/handoff/ground-source.md); a fresh
+  clone includes it. Never edit those originals; format a separate copy if needed.
+
+This checkpoint contains the original research archive and must remain private.
+Do not change repository visibility or redistribute the archive. Provenance and
+third-party terms remain unchanged by private storage.
 
 The next implementation task uses public open-model contracts and original code.
 It does not require accessing private endpoints or extending the inspection of
@@ -31,6 +36,7 @@ sources. Do not invent evidence or claim to have run missing experiments.
 Use Python 3.11+, keep the default runtime dependency-free, and keep model
 dependencies optional. Run relevant tests and the complete existing suite before
 publishing changes. Do not execute candidate commands while testing the gate.
-Do not commit credentials, private observations, raw vendor artifacts, weights
-or an unreviewed dataset. See [NOTICE.md](NOTICE.md) and the data provenance
+Do not commit credentials, live user transcripts, weights or an unreviewed
+dataset. Keep the preserved research archive unchanged; do not add unrelated
+vendor artifacts. See [NOTICE.md](NOTICE.md) and the data provenance
 contract in [docs/collection.md](docs/collection.md).

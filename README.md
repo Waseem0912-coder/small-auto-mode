@@ -4,7 +4,7 @@ Independent tool-call authorization, local tool discovery, and a training pipeli
 
 **Status: research prototype. No trained safety checkpoint or production accuracy claim.** Candidate tool calls are never executed by this package. Automatic approval is off by default. The project is independent of Claude Code, LangChain, Jev, and any application host.
 
-**Continuing in Claude Code or another coding agent:** start with [the handoff](docs/HANDOFF.md). The root [CLAUDE.md](CLAUDE.md) points to the saved state, verification commands and next implementation task. Original research artifacts are preserved in an optional [private companion](docs/handoff/ground-source.md); the public repository keeps accurate provenance and reproducible source references.
+**Continuing in Claude Code or another coding agent:** start with [the handoff](docs/HANDOFF.md). The root [CLAUDE.md](CLAUDE.md) points to the saved state, verification commands and next implementation task. This private repository includes the unchanged [original research archive](research/ground-source-2.1.323.tar.gz), with [restore instructions](docs/handoff/ground-source.md). A normal clone includes the archive; no chat download is needed. Keep this checkpoint private.
 
 ## Why this exists
 
@@ -100,4 +100,4 @@ Human-owned labels are accepted by default. Other verified sources require expli
 
 Runtime and data tests pass, including an actual random-Transformer train/save/reload/inference smoke test. See [validation](docs/validation.json). No live teacher calls, representative labeled corpus, 596M fine-tuning run, or production evaluation was completed. The next milestone is a reviewed dataset and a measured error-versus-coverage curve, not a claim of Claude parity.
 
-Original code is Apache-2.0. Referenced projects and model weights retain their own terms. No proprietary CLI source, full prompts, binaries, private transcripts, credentials or model weights are distributed here.
+Original code is Apache-2.0. Referenced projects and model weights retain their own terms. The checked-in private research archive preserves vendor source/assets, an exported policy and saved research under their existing terms; the project license does not relicense those materials. It contains no credentials, live user transcripts or model weights. The original executable and package archives are not duplicated here. Do not make this checkpoint public or redistribute the archive.
